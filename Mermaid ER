@@ -1,0 +1,28 @@
+erDiagram
+USERS ||--o{ DOCUMENTS : uploads
+USERS ||--o{ OP_LOGS : performs
+DOCUMENTS }o--|| CATEGORY : classified
+
+
+USERS {
+bigint id PK
+varchar username
+varchar password
+varchar role
+datetime create_time
+}
+DOCUMENTS {
+bigint id PK
+varchar name
+varchar path
+varchar type
+varchar category
+bigint user_id FK
+datetime upload_time
+}
+OP_LOGS {
+bigint id PK
+bigint user_id FK
+varchar action
+datetime time
+}
