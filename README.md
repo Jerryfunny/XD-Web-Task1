@@ -17,8 +17,8 @@
 
 ## 快速运行
 1. 克隆仓库
-2. 后端：在 `backend` 目录下运行 `mvn spring-boot:run`（配置好 application.properties）
-3. 前端：在 `frontend` 目录下运行 `npm install` 然后 `npm run dev`
+2. 后端：在 `后端` 目录下运行 `mvn spring-boot:run`（配置好 application.properties）
+3. 前端：在 `src` 目录下运行 `npm install` 然后 `npm run dev`
 4. 访问：前端默认 http://localhost:5173，后端 http://localhost:8080
 
 
